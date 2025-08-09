@@ -1,24 +1,11 @@
-# README
+A simple Ruby on Rails project that serves both as a traditional HTML web app and a JSON-based RESTful API for managing kittens.
+Built as part of The Odin Project curriculum, it covers:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HTML interface for creating, viewing, editing, and deleting kittens.
 
-Things you may want to cover:
+JSON API endpoints for retrieving kitten data programmatically.
 
-* Ruby version
+Practice with Rails controllers, RESTful routes, and API responses.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The project starts with exploring the Flickr API for understanding RESTful API patterns.
+[Odin Project](https://www.theodinproject.com/lessons/ruby-on-rails-kittens-api)
