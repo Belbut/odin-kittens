@@ -1,0 +1,8 @@
+<h1>kittens#index</h1>
+<p>Find me in app/views/kittens/index.html.erb</p>
+
+
+<%@kittens.each_with_index do |kitten, index|%>
+    <div><h2>Kitten nº <%=(index+1).to_s.rjust(10,"0")%></h2></div>
+    <%= render kitten%>
+<%end%>

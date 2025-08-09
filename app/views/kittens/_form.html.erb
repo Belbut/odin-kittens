@@ -1,0 +1,15 @@
+<%= form_with model:@kitten do |form| %>
+    <%=form.label :name, "Kitten Name:"%>
+    <%=form.text_field :name%>
+
+    <%=form.label :age, "Kitten Age:"%>
+    <%=form.number_field :age%>
+
+    <%=form.label :cuteness, "Kitten cuteness:"%>
+    <%=form.select :cuteness, options_for_select(Kitten::CUTENESS_OPTIONS)%>
+
+    <%=form.label :softness, "Kitten softness:"%>
+    <%=form.select :softness, options_for_select(Kitten::SOFTNESS_OPTIONS)%>
+
+    <%= form.submit%>
+<%end%>
