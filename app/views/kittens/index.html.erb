@@ -1,8 +1,11 @@
 <h1>kittens#index</h1>
 <p>Find me in app/views/kittens/index.html.erb</p>
 
+<%=link_to "Add Kitten", new_kitten_path%>
 
 <%@kittens.each_with_index do |kitten, index|%>
-    <div><h2>Kitten nº <%=(index+1).to_s.rjust(10,"0")%></h2></div>
+    <div><h2>Kitten nº <%=(index+1).to_s.rjust(3,"0")%></h2></div>
     <%= render kitten%>
+    
+    <div><%= link_to "See Profile", kitten%> | <%= link_to "Edit Kitten", edit_kitten_path(kitten) %></div>
 <%end%>

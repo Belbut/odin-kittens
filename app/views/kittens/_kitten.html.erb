@@ -1,8 +1,29 @@
 <div>
-   <ul>
-    <li><h3>Name:</h3><%=kitten.name%></li>
-    <li><h3>Age:</h3><%=kitten.age%></li> <%if kitten.age%>
-    <li><h3>Cuteness:</h3><%=kitten.cuteness%></li><%if kitten.cuteness%>
-    <li><h3>Softness:</h3><%=kitten.softness%></li><%if kitten.softness%>
+   <ul class="list">
+      <li>
+         <h3>Name:</h3>
+         <div><%=kitten.name%></div>
+      </li>
+
+    <%if kitten.age.present?%>
+      <li>
+         <h3>Age:</h3>
+         <div><%=kitten.age%></div>
+      </li> 
+    <%end%>
+
+    <%if kitten.cuteness.present?%>
+      <li>
+         <h3>Cuteness:</h3>
+         <div><%=kitten.cuteness%></div>
+      </li>
+    <%end%>
+
+    <%if kitten.softness.present?%>
+      <li>
+        <h3>Softness:</h3>
+        <div><%=kitten.softness%></div>
+      </li>
+    <%end%>
    </ul>
 </div>
